@@ -1,0 +1,17 @@
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
+set(CMAKE_CXX_EXTENSIONS FALSE)
+
+if (APPLE)
+
+enable_language(OBJCXX)
+
+endif()
+
+
+if (NOT ${CMAKE_BUILD_TYPE} IN_LIST CMAKE_CONFIGURATION_TYPES)
+
+message(FATAL_ERROR "Invalid build type '${CMAKE_BUILD_TYPE}', the valid options : (${CMAKE_CONFIGURATION_TYPES}).")
+
+endif()
+

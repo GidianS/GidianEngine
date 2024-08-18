@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.16)
+
+project("Gidian Engine" VERSION 1.0.0 LANGUAGES CXX)
+
+set(GE_PROJECT_DIR ${CMAKE_CURRENT_SOURCE_DIR})
+set(GE_PROJECT_SOURCE_DIR ${GE_PROJECT_DIR}/Source)
+set(GE_PORJECT_SOURCE_TOOLS_DIR ${GE_PROJECT_SOURCE_DIR}/Tools)
+
+include(${GE_PORJECT_SOURCE_TOOLS_DIR}/CMake/Setup.cmake)
+include(${GE_PORJECT_SOURCE_TOOLS_DIR}/CMake/Configure.cmake)
+include(${GE_PORJECT_SOURCE_TOOLS_DIR}/CMake/Build.cmake)
